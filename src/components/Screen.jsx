@@ -4,12 +4,12 @@ import handleClick from './Button'
 
 
 
-function Screen(number) {
+function Screen({number}) {
     
   
     return (
         <div id="screen">
-                  <input type="text" placeholder={number.number} id="screen_input"   />
+                  <input type="text" placeholder={0} id="screen_input"  value={number}  />
      </div>
     )
 }

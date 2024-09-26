@@ -1,18 +1,22 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
 
 
-function Button(props) {
+// function Button({callBack, num}) {
+
+    
 
    
-    return (
-       <>
-             <div className='button'>
-                <button >{props.sign} </button>
-              </div>
-       
-       </>
-    )
-}
+//     return (
+//        <>
+//              <div className='button'>
+//                 <button onClick={(e) => callBack(num + e.target.num)}>{num}</button>
+                
+                
+//             </div>
+            
+//        </>
+//     )
+// }
 
-export default Button
+// export default Button

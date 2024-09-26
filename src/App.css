@@ -1,44 +1,244 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.cdnfonts.com/css/led-digital-7");
+.container {
+  background-color: rgb(247, 245, 240);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@media screen and (min-width: 900px) {
+
+  #small_containter {
+    background-color: rgb(6, 157, 245);
+    height: 70%;
+    width: 60%;
+    border-radius: 5%;
+    margin-top: 4%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  
+  #screen input {
+    background-color: rgb(253, 251, 251);
+    height: 10%;
+    width: 78%;
+    font-size: 70px;
+    margin: 15%  10%  10% 10% ; 
+    border-radius: 25px;
+    text-align: end;
+    
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+   
+  .btn-container {
+    
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
+    align-items: center;
+    grid-gap: 5%;
+    padding: 1% 10% 2% 12%;
+  
+    font-size: 40px;
+    /* margin: 100px 40px 10px 40px; */
   }
-}
+  
+  button {
+    padding: 20%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #0c03f9;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 450px) {
+
+  #small_containter {
+    background-color: rgb(6, 157, 245);
+    height: 600px;
+    width: 420px;
+    border-radius: 5%;
+    margin-top: 4%;
+  }
+  
+  
+  
+  #screen input {
+    background-color: rgb(253, 251, 251);
+    height: 10%;
+    width: 78%;
+    font-size: 60px;
+    margin: 18%  10%  10% 10% ; 
+    border-radius: 20px;
+    text-align: end;
+    
+  }
+  
+   
+  .btn-container {
+    
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
+    align-items: center;
+    grid-gap: 5%;
+    padding: 1% 10% 2% 12%;
+  
+    font-size: 40px;
+    /* margin: 100px 40px 10px 40px; */
+  }
+  
+  button {
+    padding: 20%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #0c03f9;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 450px) {
+
+    #small_containter {
+      background-color: rgb(6, 157, 245);
+      height: 490px;
+      width: 340px;
+      border-radius: 5%;
+      margin-top: 4%;
+    }
+    
+    
+    
+    #screen input {
+      background-color: rgb(253, 251, 251);
+      height: 5%;
+      width: 78%;
+      font-size: 50px;
+      margin: 18%  10%  10% 10% ; 
+      border-radius: 20px;
+      text-align: end;
+      
+    }
+    
+     
+    .btn-container {
+      
+      display: grid;
+      grid-template-columns: 21% 21% 21% 21%;
+      align-items: center;
+      grid-gap: 5%;
+      padding: 1% 10% 2% 12%;
+    
+      font-size: 40px;
+      /* margin: 100px 40px 10px 40px; */
+    }
+    
+    button {
+      padding: 20%;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #0c03f9;
+      color: white;
+      border-radius: 10px;
+    }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 325px) {
+
+      #small_containter {
+        background-color: rgb(6, 157, 245);
+        height: 420px;
+        width: 300px;
+        border-radius: 5%;
+        margin-top: 4%;
+      }
+      
+      
+      
+      #screen input {
+        background-color: rgb(253, 251, 251);
+        height: 5%;
+        width: 78%;
+        font-size: 50px;
+        margin: 18%  10%  10% 10% ; 
+        border-radius: 20px;
+        text-align: end;
+        
+      }
+      
+       
+      .btn-container {
+        
+        display: grid;
+        grid-template-columns: 21% 21% 21% 21%;
+        align-items: center;
+        grid-gap: 5%;
+        padding: 1% 10% 2% 12%;
+      
+        font-size: 20px;
+        /* margin: 100px 40px 10px 40px; */
+      }
+      
+      button {
+        padding: 20%;
+        font-size: 12px;
+        cursor: pointer;
+        background-color: #0c03f9;
+        color: white;
+        border-radius: 10px;
+      }
+      
+      }
