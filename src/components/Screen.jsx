@@ -1,15 +1,15 @@
 import { useState } from 'react'
-import handleClick from './Button'
+// import handleClick from './Button'
 
 
 
 
-function Screen({number}) {
+function Screen(number) {
     
   
     return (
         <div id="screen">
-                  <input type="text" placeholder={0} id="screen_input"  value={number}  />
+                   <input type="text" placeholder="0" id="screen_input" value={number.value} readOnly='readonly'/>
      </div>
     )
 }

@@ -1,13 +1,35 @@
 import { useState } from 'react'
 import './App.css'
-// import Screen from './components/Screen'
-// import Button from './components/Button'
+import Screen from './components/Screen'
+import Button from './components/Button'
 
 
 
 
 function App() {
   const [count, setNumber] = useState('')
+
+  const handleChildClick = (e) => {
+    setNumber(count + e.target.value);
+    
+  };
+
+
+  const handleDelClick = () => {
+    setNumber(count.toString().slice(0,-1));
+    
+  };
+
+  const handleClearClick = () => {
+    setNumber("");
+    
+  };
+
+
+  const handleSumClick = () => {
+    setNumber(eval(count));
+    
+  };
 
 
 
@@ -16,39 +38,62 @@ function App() {
     <>
          <div className="container">
       <div id="small_containter">
+     
         <div id="screen">
-          
-          <input type="text" placeholder="0" id="screen_input" value={count} />
+          <Screen value={count}/>
         </div>
 
         <div className="btn-container">
           
-          <button onClick={(e) => setNumber(count + '(')}>(</button>
-          <button onClick={() => setNumber(count + ')')}>)</button>
-          <button onClick={() => setNumber(count.toString().slice(0,-1))}>Del </button> 
-          <button onClick={() => setNumber("")}>AC</button>
-
-          <button onClick={() => setNumber(count + '7')}>7</button>
-          <button onClick={() => setNumber(count + '8')}>8</button>
-          <button onClick={() => setNumber(count + '9')}>9</button>
-          <button onClick={() => setNumber(count + '+')}>+</button>
-
-
-          <button onClick={() => setNumber(count + '4')}>4</button>
-          <button onClick={() => setNumber(count + '5')}>5</button>
-          <button onClick={() => setNumber(count + '6')}>6</button>
-          <button oncCick={() => setNumber(count + '-')}>-</button>
           
-          <button onClick={() => setNumber(count + '1')}>1</button>
-          <button onClick={() => setNumber(count + '2')}>2</button>
-          <button onClick={() => setNumber(count + '3')}>3</button>
-          <button onClick={() => setNumber(count + '*')}>x</button>
+          <Button onButtonClick={handleChildClick} value="("/>
+          <Button onButtonClick={handleChildClick} value=")"/>
+         
+          <Button onButtonClick={handleDelClick} value="Del"/>
+          <Button onButtonClick={handleClearClick} value="AC"/>
+          
+
+          
+          <Button onButtonClick={handleChildClick} value="7"/>
+          
+          <Button onButtonClick={handleChildClick} value="8"/>
+          
+          <Button onButtonClick={handleChildClick} value="9"/>
+          
+          <Button onButtonClick={handleChildClick} value="+"/>
+          
+          
+          
 
 
-          <button onClick={() => setNumber(count + '0')}>0</button>
-          <button onClick={() => setNumber(count + '.')}>.</button>
-          <button onClick={() => setNumber(count + '/')}>÷</button>
-          <button onClick={() => setNumber(eval(count))}>=</button>
+
+          
+          <Button onButtonClick={handleChildClick} value="4"/>
+          
+          <Button onButtonClick={handleChildClick} value="5"/>
+          
+          <Button onButtonClick={handleChildClick} value="6"/>
+          
+          <Button onButtonClick={handleChildClick} value="-"/>
+          
+          
+          <Button onButtonClick={handleChildClick} value="1"/>
+          
+          <Button onButtonClick={handleChildClick} value="2"/>
+          
+          <Button onButtonClick={handleChildClick} value="3"/>
+          
+          <Button onButtonClick={handleChildClick} value="*"/>
+
+
+          
+          <Button onButtonClick={handleChildClick} value="0"/>
+         
+          <Button onButtonClick={handleChildClick} value="."/>
+          
+          <Button onButtonClick={handleChildClick} value="/"/>
+          
+          <Button onButtonClick={handleSumClick} value="="/>
           
           
         </div>
@@ -60,11 +105,3 @@ function App() {
   )
 }
   export default App
-
-
-
-
-
-
-
-

@@ -1,22 +1,20 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 
 
 
-// function Button({callBack, num}) {
+function Button({onButtonClick,value}) {
 
     
 
    
-//     return (
-//        <>
-//              <div className='button'>
-//                 <button onClick={(e) => callBack(num + e.target.num)}>{num}</button>
-                
-                
-//             </div>
+    return (
+       <>
+             <div className='button'>
+                <button value={value} onClick={onButtonClick}>{value}</button>
+            </div>
             
-//        </>
-//     )
-// }
+       </>
+    )
+}
 
-// export default Button
+export default Button
