@@ -2,12 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import Screen from './components/Screen'
 import Button from './components/Button'
-import ButtonRow from './ButtonRow'
 
 
 
 
-function App() {
+function ButtonRow(props) {
   const [count, setNumber] = useState("")
 
   const handleChildClick = (e) => {
@@ -37,27 +36,24 @@ function App() {
 
   return (
     <>
-         {/* <div className="container">
+         <div className="container">
       <div id="small_containter">
      
         <div id="screen">
           <Screen value={count}/>
         </div>
 
-        <div className="btn-container"> */}
-
-          <ButtonRow culumnA = "("  culumnB = ")"  culumnC = "Del" culumnD = "AC" />
+        <div className="btn-container">
           
           
-          {/* <Button onButtonClick={handleChildClick} value="("/>
-          <Button onButtonClick={handleChildClick} value=")"/>
-         
-          <Button onButtonClick={handleDelClick} value="Del"/>
-          <Button onButtonClick={handleClearClick} value="AC"/>
+          <Button onButtonClick={handleChildClick} value={props.culumnA} />
+          <Button onButtonClick={handleChildClick} value={props.culumnB} />
+          <Button onButtonClick={handleDelClick} value={props.culumnC} />
+          <Button onButtonClick={handleClearClick} value={props.culumnD}/>
           
 
           
-          <Button onButtonClick={handleChildClick} value="7"/>
+          {/* <Button onButtonClick={handleChildClick} value="7"/>
           
           <Button onButtonClick={handleChildClick} value="8"/>
           
@@ -96,15 +92,15 @@ function App() {
           
           <Button onButtonClick={handleChildClick} value="/"/>
           
-          <Button onButtonClick={handleSumClick} value="="/>
-           */}
+          <Button onButtonClick={handleSumClick} value="="/> */}
           
-        {/* </div>
+          
+        </div>
       </div>
-    </div> */}
+    </div>
 
     
     </>
   )
 }
-  export default App
+  export default ButtonRow

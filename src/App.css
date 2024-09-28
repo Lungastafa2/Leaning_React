@@ -47,7 +47,7 @@
     /* margin: 100px 40px 10px 40px; */
   }
   
-  button {
+  Button {
     padding: 20%;
     font-size: 25px;
     cursor: pointer;
@@ -110,7 +110,7 @@
     /* margin: 100px 40px 10px 40px; */
   }
   
-  button {
+  Button {
     padding: 20%;
     font-size: 25px;
     cursor: pointer;
@@ -168,7 +168,7 @@
       /* margin: 100px 40px 10px 40px; */
     }
     
-    button {
+    Button {
       padding: 20%;
       font-size: 20px;
       cursor: pointer;
